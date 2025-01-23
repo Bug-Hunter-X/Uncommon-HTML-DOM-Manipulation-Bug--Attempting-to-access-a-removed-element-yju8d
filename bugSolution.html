@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML Code</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <script>
+    //Correct Solution 1:  Remove the element.
+    document.getElementById("myDiv").remove();
+    //Correct Solution 2: Hide the element, then remove (if needed)
+    //document.getElementById("myDiv").style.display = "none";
+    //setTimeout(function(){ document.getElementById("myDiv").remove();}, 1000); 
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <script>
+    // Incorrect attempt to remove the div, resulting in unexpected behavior
+    document.getElementById("myDiv").remove(); 
+    document.getElementById("myDiv").style.display = "none";  // This line will error because the element is already removed
+  </script>
+</body>
+</html>
